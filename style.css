@@ -83,3 +83,24 @@ footer {
   font-size: 0.75rem;
   opacity: 0.7;
 }
+.link {
+  display: block;
+  text-align: center;
+  margin: 10px 0 20px;
+  color: #60a5fa;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+.email a {
+  color: #93c5fd;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.email a:hover {
+  text-decoration: underline;
+}
