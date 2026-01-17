@@ -2,17 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Free Training App</title>
+  <title>Free Workout Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <div class="app">
     <h1>Free Workout Generator</h1>
+    <p class="subtitle">Simple, safe workouts — no equipment needed</p>
+
+    <label>Workout Type</label>
+    <select id="type">
+      <option value="legs">Legs</option>
+      <option value="upper">Upper Body</option>
+      <option value="hiit">HIIT</option>
+    </select>
+
+    <label>Difficulty</label>
+    <select id="difficulty">
+      <option value="easy">Easy</option>
+      <option value="medium">Medium</option>
+      <option value="hard">Hard</option>
+    </select>
 
     <button onclick="generateWorkout()">Generate Workout</button>
 
-    <div id="workout"></div>
+    <pre id="workout"></pre>
+
+    <footer>
+      <p>⚠️ Train safely. Stop if you feel pain.</p>
+      <p>Built by a young creator 💪</p>
+    </footer>
   </div>
 
   <script src="script.js"></script>
